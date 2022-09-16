@@ -1,20 +1,33 @@
 import java.util.Scanner;
-class ThreeGreatestNumber{
-public static void main (String[] arga){
 
-int a,b,c;
-System.out.println("Enter any 3 number");
-Scanner sc =new Scanner (System.in);
-a=sc.nextInt();
-b=sc.nextInt();
-c=sc.nextInt();
+public class ThreeGreatestNumber {
 
-if(a>b && a>c)
-System.out.println(a+  "Greatest number");
-else
-if(b>c)
-System.out.println(b+  "Greatest number");
-else
-System.out.println(c+  "Greatest number");
+	public static void main(String[] args) {
+		
+     System.out.println("Enter any 3 number");
+     Scanner sc =new Scanner (System.in);
+      
+     double a,b,c;
+      a=sc.nextDouble();
+		
+      b=sc.nextDouble();
+		
+      c=sc.nextDouble();
+			
+ 
+     if (a>b && a>c )
+     {
+	      
+		  System.out.println(a+ "greatest");
+     }
+          else
+         
+	      if(b>c)
+		  System.out.println(b+ "greatest");
+	      else
+	      System.out.println(c+ "greatest");
+     
+    
+	}
+}
 
-}}
